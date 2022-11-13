@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.example
+testFramework: junit
+sourceLanguage: groovy
+buildTool: gradle
+features: [annotation-api, app-name, gradle, groovy, groovy-application, http-client, jackson-databind, jackson-xml, junit, logback, micronaut-build, netty-server, readme, shade, views-thymeleaf, yaml]

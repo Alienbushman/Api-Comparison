@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="micronaut-service run configurationsr" type="GradleRunConfiguration" factoryName="dockerGradle">
+        <deployment type="docker-image">
+            <settings>
+                <option name="imageTag" value="dev.unibos.co.za/messaging-service:latest-snapshot"/>
+                <option name="attachToContainerNeeded" value="true"/>
+                <option name="containerName" value="messaging-service"/>
+                <option name="portBindings">
+                    <list>
+                        <DockerPortBindingImpl>
+                            <option name="containerPort" value="8500"/>
+                            <option name="hostPort" value="8500"/>
+                        </DockerPortBindingImpl>
+                    </list>
+                </option>
+            </settings>
+        </deployment>
+        <method v="2"/>
+    </configuration>
+</component>

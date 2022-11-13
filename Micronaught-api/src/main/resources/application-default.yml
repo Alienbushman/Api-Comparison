@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: micronaughtApi
+  server:
+    port: 8081
+netty:
+  default:
+    allocator:
+      max-order: 3

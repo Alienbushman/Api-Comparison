@@ -1,0 +1,28 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.2'
+	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+	id 'groovy'
+}
+
+group = 'api'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-websocket:2.5.2'
+	implementation('org.springframework.boot:spring-boot-starter-web:2.5.2')
+	testImplementation('org.springframework.boot:spring-boot-starter-test:2.5.2')
+	implementation('io.springfox:springfox-boot-starter:3.0.0')
+	implementation('com.squareup.okhttp3:okhttp:4.9.1')
+	implementation 'org.codehaus.groovy:groovy'
+	implementation ('org.apache.commons:commons-lang3')
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
